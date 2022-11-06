@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title 
+.header {
+  background-color:lightcyan;
+  padding: 10px;
+  text-align: center;
+  border-radius: 50px;
+  border: 1px solid rgb(16, 150, 23);
+box-shadow: 2px 2px 6px 0px rgb(45, 28, 117);
+font-weight: bolder;
+}*/
+
+.header{
+  border:15px solid darkblue; 
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: auto;
+  font-size: 20px;
+  color:maroon;
+  background-color: hotpink;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ /* text-shadow: 4px 4px 10px blueviolet;*/
+   text-shadow: 0 0 3px green, 0 0 5px red;
+  transition: 3s;
+  font-style: italic;
+  animation: mymoves 5s infinite;
+
+
+}
+@keyframes mymoves{
+  50%{border-top-left-radius: 200px;}
+  50%{border-top-right-radius: 200px;}
+  50%{border-bottom-left-radius: 200px;}
+  50%{border-bottom-right-radius: 200px;}
+  50%{border-top-color: moccasin;}
+  50%{box-shadow: 10px 20px 30px coral;}
+  50%{letter-spacing: 10px;}
+  50%{outline: 1px solid red;}
+
+  50%{background-color: mediumpurple;}
+  form{background-color: red;}
+  to{background-color: orange;}
+}
+
+.header:hover{
+  font-size: 20px;
+  background-color: gold;
+  transform: rotate(360deg);
+  border-radius: 80px;
+}
+
+
+.logo img{
+  
+  float: left;
+  width: 100px;
+  height: auto;
+}
+
+
+.header h1 {
+  
+  font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-stretch: normal;
+  text-decoration: underline;
+
+  color: darkorange;
+  
+
+  
+text-shadow: 0 0 3px green, 0 0 5px red;
+  transition: 2s;
+  font-style: italic;
+
+  
+}
+
+div.sticky {
+      position: -webkit-sticky;
+      position: sticky;
+      border-radius: 10px;
+      top: 0;
+      padding: 4px;
+      font-size: 20px;
+      background-color: black;
+     color: #a50808;
+      box-shadow: 0 0 10px 5px;
+    }
+   
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  border-radius: 20px;
+  float: left;
+  width: 25%;
+  background-color:lightpink;
+  padding-left: 10px;
+}
+
+/* Fake image */
+.fakeimg {
+  margin: auto;
+  padding: auto;
+  background-color: lightgoldenrodyellow;
+  width: 100%;
+  border-radius: 20px;
+  animation: mymoves 5s infinite;
+
+
+ 
+}
+img{
+  border-radius: 20px;
+  border: 0 0 2px 5px;
+  color: rgb(101, 26, 171);
+  
+}
+
+
+h2{
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  color: blue;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+h5{
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  color: #a50808;
+}
+p{
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  color: #1a0a75b3;
+  font-size:medium;
+}
+h3{
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  color: #a50808;
+}
+
+
+
+
+
+
+
+.cards {
+
+  background-color: aqua;
+border-radius: 10px;
+display: flex;
+flex-wrap:no wrap;
+align-items: stretch;
+justify-content: space-around;
+}
+
+
+.card{
+border-radius: 10px;
+
+flex: 0 0 200px;
+margin: 10px;
+border: 1px solid rgb(128, 25, 192);
+box-shadow: 2px 2px 6px 0px rgb(125, 7, 35);
+backface-visibility: hidden;
+transition: 1s ease-in-out;animation: mymoves 5s infinite;
+
+animation: mymoves 5s infinite;
+}
+@keyframes mymoves{
+  50%{border-top-right-radius: 100px;}
+  50%{border-bottom-left-radius: 100px;}
+  
+}
+
+
+
+
+
+
+
+.card:hover .card{
+  
+  transform: rotate(360deg);
+}
+.card img {
+  max-width: 100%;
+  box-shadow: rgb(44, 180, 28);
+}
+.card .text {
+  color: #64833a;
+  padding: 0 20px 20px;
+}
+
+
+
+.fakeimg1{
+  background-image: url(dog5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  
+  
+}
+body{
+  background-color:rgb(210, 238, 210);
+}
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: lightyellow;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.fa {
+      border-radius: 10px;
+      
+      padding: 25px;
+      font-size: 15px;
+      width: 20px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 5px;
+    }
+    
+    .fa:hover {
+        opacity: 0.7;
+    }
+    
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+    
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+    
+    .fa-google {
+      background: #dd4b39;
+      color: white;
+    }
+    
+    .fa-linkedin {
+      background: #007bb5;
+      color: white;
+    }
+    
+    .fa-youtube {
+      background: #bb0000;
+      color: white;
+    }
+    
+    .fa-instagram {
+      background: #125688;
+      color: white;
+    }
+    .footer{
+      background-color: #b589a7;
+      text-align: center;
+      text-decoration: underline;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-style: italic;
+      color: #bb0000;
+      border: 1px solid rgb(109, 31, 198);
+box-shadow: 4px 4px 6px 0px rgb(210, 38, 127);
+border-radius: 20px;
+
+    }
+    
+    
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="main">
+    <div class="logo">
+    <img src="doglogo.jpg">
+            
+        </div>
+  </div>
+  
+  <h1>DOG SPA</h1>
+
+</div>
+
+
+
+
+<div class="sticky">
+  <div class="topnav">
+    <a href="#">HOME</a>
+    <a href="#">CONTACT</a>
+    <a href="#">VIDEOS</a>
+    <a href="#">ABOUT</a>
+    <a href="#">PAGES</a>
+    <a href="#">FEATURES</a>
+    <a href="#">BLOG</a>
+    <a href="#">GALLARY</a>
+    <a href="#">HELP</a>
+    <a href="#">MORE INFO</a>
+  </div>
+  
+</div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Rapid services For Your Dogs</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:320px;">
+        <main class="cards">
+          <article class="card">
+            <img src="dogbath.jpg" alt="Sample photo">
+            <div class="text">
+              <h3> Hydrobath in warm fresh water</h3>
+               </div>
+          </article>
+          <article class="card">
+            <img src="dogdeo.jpg" alt="Sample photo">
+            <div class="text">
+              <h3>Deoderent</h3>
+               </div>
+          </article>
+          <article class="card">
+            <img src="dogear.jpg" alt="Sample photo">
+            <div class="text">
+              <h3>Ear And Eye Clean</h3>
+               </div>
+          </article>
+          <article class="card">
+            <img src="dognail.jpg" alt="Sample photo">
+            <div class="text">
+              <h3>Nail Clipped</h3>
+               </div>
+          </article>
+    </div>
+      <p><b>The service offers various packages for your dog or cat with add ons such as 
+        all-day play with other pups, a bath before your dog returns, and his or her own pet suite. There’s 24/7 on-site staffing 
+        and a veterinarian on call, so you can feel confident that your pooch is being well taken care of.
+        Our team of experts share their experiences in dog ownership and in-depth analyses of today’s most beloved pup products to help you bring life 
+        to those special moments with your dog that you’ll cherish for a lifetime.</p>
+      </b></p>
+      <p><b>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </b></div>
+    <div class="card">
+      <h2>Our Gaurantee To You!</h2>
+      <p><b>Your Dog Washed Clean, flea Free And Smelling Great......OR It's FREE</b></p>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg1" style="height:1100px;"></div>
+      <p><b>We Gives Our Best</b></p>
+      <p> <b>There’s 24/7 on-site staffing 
+        and a veterinarian on call, so you can feel confident that your pooch is being well taken care of.
+        Our team of experts share their experiences in dog ownership and in-depth analyses of today’s most beloved pup products to help you bring life 
+        to those special moments with your dog that you’ll cherish for a lifetime.</b></p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>We provides dogs best service</h2>
+      <div class="fakeimg" style="height:640px;"><b>The service offers various packages for your dog or cat with add ons such as 
+        all-day play with other pups, a bath before your dog returns, and his or her own pet suite. There’s 24/7 on-site staffing 
+        and a veterinarian on call, so you can feel confident that your pooch is being well taken care of.
+        Our team of experts share their experiences in dog ownership and in-depth analyses of today’s most beloved pup products to help you bring life to those special moments with your dog that you’ll cherish for a lifetime.
+        
+      </b> <div class="fakeimg"><img src="dog7.jpg" style="width:100%"><img src="dogdeo.jpg" style="width:100%">
+
+      </div>
+  
+    </div>
+    <div class="card" style="height:650px";>
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><p><img src="spa.jpg" style="width:100%">
+      </div>
+      <div class="fakeimg"><p><img src="spa1.jpg" style="width:100%">
+    </div>
+      <div class="fakeimg"><p><img src="spa2.jpg" style="width:100%">
+    </div>
+    </div>
+    <div class="card">
+      
+      <h2>follow us on</h2>
+      <p><b>
+
+
+        Dogs are carnivorous by nature, though not strictly so. Cats are called obligate carnivores because 
+        their bodies are adapted to digesting and utilizing animal-based foods more than plant-based foods. 
+        To a lesser degree, the same is true for dogs, though they are better able to digest certain plant products than cats are.
+        Related: 5 Benefits of Feeding Your Dog a Raw Diet.Protein is made up of amino acids – these are organic compounds that play an important role in a number of essential bodily processes.
+      </b></p>
+
+<!-- Add font awesome icons -->
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+</div>
+  </div>
+</div>
+</div>
+
+
+<div class="footer" style="height:100px";>
+
+  <h2>Explore more</h2>
+
+  <p>  To see more, visit https://www.npr.org. </p>
+  
+
+</div>
+</body>
+</html>
+
+
